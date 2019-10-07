@@ -1,4 +1,4 @@
-js
+
 const config = {
   entry: `${__dirname}/src/app.js`,
   output: {
