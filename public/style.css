@@ -3,14 +3,16 @@ h1 {
   align-content: center;
 }
 .done {
-  color: green;
-  border: 1px solid green;
-  border-style: solid;
-  font-weight: bold;
+  border-left: 6px solid green;
+  background-color: lightgrey;
 }
 
 .not-done {
-  color:red;
-  border: 1px solid red;
-  border-style: solid;
+  border-left: 6px solid red;
+  background-color: lightgrey;
+}
+
+html {
+  background-image: url("./../../images/background.jpg");
+  background-size: cover;
 }
