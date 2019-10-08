@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>To Do</title>
-    <link rel="stylesheet" href="./style.css">
-    <script type="text/javascript" src="./js/bundle.js"></script>
-  </head>
-  <body>
-    <h1>To Do</h1>
-    <div id="app">
+<head>
+  <meta charset="utf-8">
+  <title>To Do</title>
+  <link rel="stylesheet" href="./style.css">
+  <script type="text/javascript" src="./js/bundle.js"></script>
+</head>
+<body>
+  <h1>To Do</h1>
+  <div id="app">
     <ul>
       <li v-for="(item, index) in items" v-bind:class="item.isDone? 'done' : 'not-done'">
-      <span>{{item.name}}</span>
-      <span v-if="item.isDone">Done</span>
-      <button type="button" v-if="!item.isDone" name="button" v-on:click="doneItem(index)">Mark as Done</button>
+        <span>{{item.name}}</span>
+        <span v-if="item.isDone">Done</span>
+        <button type="button" v-if="!item.isDone" name="button" v-on:click="doneItem(index)">Mark as Done</button>
       </li>
     </ul>
     <form v-on:submit.prevent="saveNewItem" action="index.html" method="post">
@@ -21,6 +21,6 @@
       <input type="text" id="new-task" v-model="newTask">
       <input type="submit" name="" value="Add new Task">
     </form>
-    </div>
-  </body>
+  </div>
+</body>
 </html>
